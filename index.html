@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Todo List</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+	
+	<style type="text/css">
+	body {
+background: rgb(130,236,191);
+background: linear-gradient(90deg, rgba(130,236,191,1) 0%, rgba(89,171,250,1) 98%);
+		font-family: Roboto;
+		font-weight:normal;
+	}
+	#container {
+		width: 360px;
+	margin: 100px auto;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+	}
+	h1	{
+		margin: 0;
+		font-size: 24px;
+		background: #00BFFF;
+		color: white;
+		font-family: Roboto;
+		padding: 10px 20px;
+		font-weight:normal;
+		text-transform: uppercase;
+	}
+	.done {
+		color: gray;
+		text-decoration: line-through;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		
+	}
+	li {
+		background: white;
+		height: 40px;
+		line-height: 40px;
+		color: #666;
+	}
+	li:nth-child(odd) {
+		background: #f7f7f7;
+	}
+	input {
+		font-size: 18px;
+		background-color: #f7f7f7;
+		width: 100%;
+		padding: 13px 13px 13px 20px;
+		box-sizing: border-box;
+		color: #00BFFF;
+	}
+	input:focus {
+		background: white;
+		border: 3px solid #00BFFF;
+		outline: none;
+	}
+	.fa-list {
+		float: right;
+		
+	}
+	span {
+		background: #e74c3c;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 1.0;
+	}
+	li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+</style>
+
+</head>
+<body>
+	<div id="container">
+	<h1>To-Do List <i class="fa fa-list" aria-hidden="true"></i></h1>
+	<ul>
+		<input type="text" placeholder="Add New ToDo">
+	
+	</ul>
+	</div>
+
+<script type="text/javascript" src="todosuperlist.js"></script>
+</body>
+</html>
+
